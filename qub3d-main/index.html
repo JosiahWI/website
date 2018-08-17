@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<title>About | Qub³d Engine Group</title>
+</head>
+
+<body>
+	<div class="navbar-fixed">
+		<nav class="z-depth-0">
+			<div class="nav-wrapper indigo accent-2">
+				<a href="#!" class="brand-logo">
+					<img class="circle" src="assets/img/qub3d-logo.png" alt="" width="100px">
+				</a>
+				<a href="#" data-target="mobile-nav" class="sidenav-trigger">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="staff.html">Meet The Staff</a>
+					</li>
+					<li>
+						<a href="#">What We're Using</a>
+					</li>
+					<li>
+						<a class="modal-trigger" href="#links-modal">Useful Links</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<!-- Useful Links Modal -->
+	<div id="links-modal" class="modal center-align">
+		<div class="modal-content">
+			<h4>Useful Links</h4>
+			<a href="https://phab.qub3d.tk" class="btn-large blue accent-2 col s12 m4 l4 row">OUR PHABRICATOR</a>
+			<a href="https://github.com/qub3d" class="btn-large green darken-2 col s12 m4 l4 row">OUR GITHUB</a>
+			<a href="https://phab.qub3d.tk" class="btn-large indigo accent-4 col s12 m4 l4 row">DISCORD</a>
+			<a href="https://chat.qub3d.tk" class="btn-large blue col s12 m4 l4 row">MATTERMOST</a>
+		</div>
+	</div>
+
+	<ul class="sidenav" id="mobile-nav">
+		<li>
+			<a href="/">Home</a>
+		</li>
+		<li>
+			<a href="staff.html">Meet The Staff</a>
+		</li>
+		<li>
+			<a href="#">What We're Using</a>
+		</li>
+		<li>
+			<a class="modal-trigger" href="#links-modal">Useful Links</a>
+		</li>
+	</ul>
+	<!-- END NAVBAR STUFF -->
+	<main>
+		<section class="intro indigo accent-2">
+			<h1 class="center-align">
+				Welcome
+			</h1>
+			<h5 class="center-align">
+				<i>you've found the internet home of the Qub³d Engine Group</i>
+			</h5>
+		</section>
+		<div class="row center grey darken-4 white-text paragraphs">
+			<h3 class="col s12 m12 l4">WHO ARE WE?</h3>
+			<h5 class="col s12 m12 l8">
+				You have reached the internet home of the Qub³d Engine Group! <br /><br />
+				We're currently building all sorts of awesome things, including
+				the Qub³d Engine, a brand new voxel game engine for C++ and OpenGL & Vulkan.
+				We'll also be creating an epic default game for Sandblox, currently entitled Horizons.
+			</h5>
+		</div>
+		<div class="row center grey darken-4 white-text paragraphs">
+			<h3 class="col s12 m12 l4">WHERE ARE WE?</h3>
+			<h5 class="col s12 m12 l8">
+				Our development platform is <a href="https://phab.qub3d.tk">PHABRICATOR</a>. (We also have <a href="https://github.com/qub3d">GitHub Mirrors</a>)
+				We use Discord as our main communication platform, and Mattermost as a secondary platform for those who can't use Discord.
+				<ul>
+					<li class="links">&bull; <a href="https://discord.gg/Yf8v4Xs">Our Discord Server</a> &bull;</li>
+					<li class="links">&bull; <a href="https://chat.qub3d.tk">Mattermost</a> &bull;</li>
+				</ul> 
+			</h5>
+		</div>
+
+	</main>
+	<footer class="page-footer indigo darken-4">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Qub³d Engine Group</h5>
+					<p class="grey-text text-lighten-4">ding dong doo da. this is a slogan</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Useful Links</h5>
+					<ul>
+						<li>
+							<a class="grey-text text-lighten-3" href="#!">OUR PHABRICATOR</a>
+						</li>
+						<li>
+							<a class="grey-text text-lighten-3" href="#!">OUR GITHUB</a>
+						</li>
+						<li>
+							<a class="grey-text text-lighten-3" href="#!">OUR DISCORD SERVER</a>
+						</li>
+						<li>
+							<a class="grey-text text-lighten-3" href="#!">OUR MATTERMOST INSTANCE</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2018 Qub³d Engine Group. All Rights Reserved
+				<!-- <a class="grey-text text-lighten-4 right" href="#!"></a> -->
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	<script>
+		M.AutoInit();
+	</script>
+</body>
+
+</html>
