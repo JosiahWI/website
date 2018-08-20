@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/css/materialize.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 
 	<title>About | Qub³d Engine Group</title>
@@ -18,7 +18,7 @@
 		<nav class="z-depth-0 transparent">
 			<div class="nav-wrapper black-text">
 				<a href="#!" class="brand-logo">
-					<img src="assets/img/qub3d-logo.png" alt="The Qub³d Logo" width="100px">
+					<img class="asyncimg" data-src="assets/img/qub3d-logo.png" alt="The Qub³d Logo" width="100px">
 				</a>
 				<a href="#" data-target="mobile-nav" class="sidenav-trigger">
 					<i class="material-icons">menu</i>
@@ -108,7 +108,7 @@
 			<div class="row">
 				<div class="card col s12 m4 l3 module">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator reductions" src="assets/img/0xen.png">
+						<img class="activator asyncimg" data-src="assets/img/0xen.png">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">0xen
@@ -123,7 +123,7 @@
 							<i class="material-icons right">close</i>
 						</span>
 						<div class="valign-wrapper">
-							<p class="flow-text">
+							<p>
 								Hey I'm John, a Third Year Game Development student who is specialising in computer graphics. I am also the graphics lead
 								for Qub3d focusing on the integration of the OpenGL/Vulkan into the renderer. I have also programmed for over 10
 								years now focusing primarily in C++.
@@ -133,10 +133,10 @@
 				</div>
 				<div class="card col s12 m4 l3 module">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator reductions" src="assets/img/beeper.png">
+						<img class="activator asyncimg" data-src="assets/img/beeper.png">
 					</div>
 					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">BeeperDeeper089
+						<span class="card-title activator grey-text text-darken-4">BeeperDeeper
 							<i class="material-icons right">more_vert</i>
 						</span>
 						<p class="container">
@@ -144,11 +144,11 @@
 						</p>
 					</div>
 					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">BeeperDeeper089
+						<span class="card-title grey-text text-darken-4">BeeperDeeper
 							<i class="material-icons right">close</i>
 						</span>
 						<div class="valign-wrapper">
-							<p class="flow-text">
+							<p>
 								Eyo! I currently am the Lead SysAdmin (Server Manager), alongside Zicklag. I like to help out in general, but my strengths
 								are server management and Python. I've been programming for over 10 years, and now primarily in Python & C. :)
 							</p>
@@ -157,7 +157,7 @@
 				</div>
 				<div class="card col s12 m4 l3 module">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator reductions" src="assets/img/blaclegi.png">
+						<img class="activator asyncimg" data-src="assets/img/blaclegi.png">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Blaclegi
@@ -172,7 +172,7 @@
 							<i class="material-icons right">close</i>
 						</span>
 						<div class="valign-wrapper">
-							<p class="flow-text">
+							<p>
 								Sup! I'm Blaclegi. I'm the Lead Developer, as I have an extensive past in C++ & OpenGL. I initially developed the Demo application,
 								and recieved a Staff position, I now lead development and help out making sure the coding standards are up to scratch
 							</p>
@@ -181,7 +181,7 @@
 				</div>
 				<div class="card col s12 m4 l3 module">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator reductions" src="assets/img/toby.png">
+						<img class="activator asyncimg" data-src="assets/img/toby.png">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Toby109tt
@@ -196,7 +196,7 @@
 							<i class="material-icons right">close</i>
 						</span>
 						<div class="valign-wrapper">
-							<p class="flow-text">
+							<p>
 								I love doing pixelart and have been fascinated with Voxel Games ever since Minecraft Beta 1.8 released back in 2011. My favorite
 								shape is a cube as it's such a special shape, and love pixels because they are so simple yet advanced. I am 1 of
 								the 2, together with The Scarecrowman, that founded Qub³d back on Feb 5th 2017.
@@ -204,11 +204,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
 				<div class="card col s12 m4 l3 module">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator reductions" src="assets/img/sonos.png">
+						<img class="activator asyncimg" data-src="assets/img/sonos.png">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">SonosFuer
@@ -223,15 +221,16 @@
 							<i class="material-icons right">close</i>
 						</span>
 						<div class="valign-wrapper">
-							<p class="flow-text">
-								Hey There! My name is Austin and I am a 3rd year computer science student. I am helping Qub³d by directing the community. I manage communication systems such as phab and discord as well as running the blog and social media.
+							<p>
+								Hey There! My name is Austin and I am a 3rd year computer science student. I am helping Qub³d by directing the community.
+								I manage communication systems such as phab and discord as well as running the blog and social media.
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="card col s12 m4 l3 module">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator reductions" src="assets/img/tekhnae.png">
+						<img class="activator asyncimg" data-src="assets/img/tekhnae.png">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">TekhnaeRaav
@@ -246,7 +245,7 @@
 							<i class="material-icons right">close</i>
 						</span>
 						<div class="valign-wrapper">
-							<p class="flow-text">
+							<p>
 								I coordinate and manage the design of games and mods, helping out in bits all around the project.
 							</p>
 						</div>
@@ -254,7 +253,7 @@
 				</div>
 				<div class="card col s12 m4 l3 module">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator reductions" src="assets/img/thomas.png">
+						<img class="activator asyncimg" data-src="assets/img/thomas.png">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">TMcSquared
@@ -269,7 +268,7 @@
 							<i class="material-icons right">close</i>
 						</span>
 						<div class="valign-wrapper">
-							<p class="flow-text">
+							<p>
 								I protect the vision of technology. I oversee development from a technical aspect and oversee mainstream operations. I'm
 								slightly humorous and don't turn down a good joke.
 							</p>
@@ -278,7 +277,7 @@
 				</div>
 				<div class="card col s12 m4 l3 module">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator reductions" src="assets/img/harsulinsghost.png">
+						<img class="activator asyncimg" data-src="assets/img/harsulinsghost.png">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">HarsulinsGhost
@@ -293,18 +292,16 @@
 							<i class="material-icons right">close</i>
 						</span>
 						<div class="valign-wrapper">
-							<p class="flow-text">
+							<p>
 								I am in charge of protecting the vision of the user, I oversee development of the games as well as the design of services
 								that our users interact with.
 							</p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
 				<div class="card col s12 m4 l3 module">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator reductions" src="assets/img/zicklag.png">
+						<img class="activator asyncimg" data-src="assets/img/zicklag.png">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Zicklag
@@ -319,7 +316,7 @@
 							<i class="material-icons right">close</i>
 						</span>
 						<div class="valign-wrapper">
-							<p class="flow-text">
+							<p>
 								I am the Lead DevOps. I lead finding the best techincal cloud solutions and, alongside BeeperDeeper089, work to deploy those
 								applications in a secure production environment!
 							</p>
@@ -364,7 +361,17 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-	<script async src="assets/js/main.js"></script>
+	<script>
+		window.addEventListener('load', function () {
+			var allimages = document.getElementsByTagName('img');
+			for (var i = 0; i < allimages.length; i++) {
+				if (allimages[i].getAttribute('data-src')) {
+					allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+				}
+			}
+		}, false)
+	</script>
+	<script async src="assets/js/main.min.js"></script>
 	<script>
 		M.AutoInit();
 	</script>
