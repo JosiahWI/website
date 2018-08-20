@@ -18,7 +18,7 @@
 		<nav class="z-depth-0 transparent">
 			<div class="nav-wrapper black-text">
 				<a href="#!" class="brand-logo">
-					<img class="asyncimg" data-src="assets/img/qub3d-logo.png" alt="The Qub³d Logo" width="100px">
+					<img class="asyncimg" id="Logo" data-src="assets/img/qub3d-logo.png" alt="The Qub³d Logo" style="width:100px">
 				</a>
 				<a href="#" data-target="mobile-nav" class="sidenav-trigger">
 					<i class="material-icons">menu</i>
@@ -88,8 +88,8 @@
 				</a>) We use Discord as our main communication platform, and Mattermost as a secondary platform for those who can't use
 				Discord.
 				<ul>
-					<li class="links hide-on-med-and-down">&bull; <a href="https://discord.gg/Yf8v4Xs">Our Discord Server</a> &bull;</li>
-					<li class="links hide-on-med-and-down">&bull; <a href="https://chat.qub3d.tk">Mattermost</a> &bull;</li>
+					<li class="links">&bull; <a href="https://discord.gg/Yf8v4Xs">Discord Server</a> &bull;</li>
+					<li class="links">&bull; <a href="https://chat.qub3d.tk">Mattermost</a> &bull;</li>
 				</ul>
 			</h5>
 		</div>
@@ -101,8 +101,8 @@
 				<i>the protectors of our vision</i>
 			</h5>
 			<br />
-			<i class="large material-icons left">arrow_downward</i>
-			<i class="large material-icons right">arrow_downward</i>
+			<i class="large material-icons left hide-on-med-and-down">arrow_downward</i>
+			<i class="large material-icons right hide-on-med-and-down">arrow_downward</i>
 		</section>
 		<div class="container">
 			<div class="row">
@@ -361,16 +361,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-	<script>
-		window.addEventListener('load', function () {
-			var allimages = document.getElementsByTagName('img');
-			for (var i = 0; i < allimages.length; i++) {
-				if (allimages[i].getAttribute('data-src')) {
-					allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-				}
-			}
-		}, false)
-	</script>
 	<script async src="assets/js/main.min.js"></script>
 	<script>
 		M.AutoInit();
