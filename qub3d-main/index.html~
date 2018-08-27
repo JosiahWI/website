@@ -9,7 +9,6 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/materialize.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/lemon.css">
 
 	<title>About | Qub³d Engine Group</title>
 </head>
@@ -63,32 +62,25 @@
 
 	<!-- END NAVBAR STUFF -->
 	<main class="">
-		<div id="dintro" class="fullPageSection" style="background-image: linear-gradient(#3a3fb5, #4b55c4, #5d69cc);">
-			<section class="intro" id="intro">
-				<h1 class="center-align">
-					WELCOME
-				</h1>
-				<h5 class="center-align">
-					<i>You've found the internet home of the Qub³d Engine Group</i>
-				</h5>
-				<br />
-				<button style="background: transparent;border: none;" class="corner large material-icons hide-on-med-and-down" onclick="smoothScroll(document.getElementById('whoarewe'));">
-				<i class="pulse large material-icons right hide-on-med-and-down">arrow_downward</i>
-				</button>
-			</section>
-		</div>
-		<div id="whoarewe" class="fullPageSection cornerContainer row center grey darken-4 white-text paragraphs">
+		<section class="intro" id="intro">
+			<h1 class="center-align">
+				WELCOME
+			</h1>
+			<h5 class="center-align">
+				<i>You've found the internet home of the Qub³d Engine Group</i>
+			</h5>
+			<br />
+			<input type="button" onClick="document.getElementById('middle').scrollIntoView();" />
+			<i class="large material-icons right hide-on-med-and-down">arrow_downward</i>
+		</section>
+		<div class="row center grey darken-4 white-text paragraphs">
 			<h3 class="col s12 m12 l4">WHO ARE WE?</h3>
 			<h5 class="col s12 m12 l8">
 				We're currently building all sorts of awesome things, including the Qub³d Engine, a brand new voxel game engine with C++
 				and OpenGL & Vulkan. We'll also be creating an epic default game for Sandblox, currently entitled Horizons.
 			</h5>
-			<br />
-			<button style="background: transparent;border: none;color:white;" class="corner large material-icons hide-on-med-and-down" onclick="smoothScroll(document.getElementById('wherearewe'));">
-				<i class="pulse large material-icons right hide-on-med-and-down">arrow_downward</i>
-			</button>
 		</div>
-		<div id="wherearewe" class="fullPageSection cornerContainer row center grey darken-4 white-text paragraphs">
+		<div class="row center grey darken-4 white-text paragraphs">
 			<h3 class="col s12 m12 l4">WHERE ARE WE?</h3>
 			<h5 class="col s12 m12 l8">
 				Our development platform is <a href="https://phab.qub3d.tk">PHABRICATOR</a>. (We also have <a href="https://github.com/qub3d">GitHub
@@ -100,10 +92,6 @@
 					<li class="links">&bull; <a href="https://chat.qub3d.tk">Mattermost</a> &bull;</li>
 				</ul>
 			</h5>
-			<br />
-			<button style="background: transparent;border: none;color:white;" class="corner large material-icons hide-on-med-and-down" onclick="smoothScroll(document.getElementById('staff'));">
-				<i class="pulse large material-icons right hide-on-med-and-down">arrow_downward</i>
-			</button>
 		</div>
 		<section class="intro" id="staff">
 			<h1 class="center-align">
@@ -376,30 +364,6 @@
 	<script async src="assets/js/main.min.js"></script>
 	<script>
 		M.AutoInit();
-	</script>
-	<script>
-    window.smoothScroll = function(target) {
-        var scrollContainer = target;
-        do { //find scroll container
-            scrollContainer = scrollContainer.parentNode;
-            if (!scrollContainer) return;
-            scrollContainer.scrollTop += 1;
-        } while (scrollContainer.scrollTop == 0);
-
-        var targetY = 0;
-        do { //find the top of target relatively to the container
-            if (target == scrollContainer) break;
-            targetY += target.offsetTop;
-        } while (target = target.offsetParent);
-
-        scroll = function(c, a, b, i) {
-            i++; if (i > 30) return;
-            c.scrollTop = a + (b - a) / 30 * i;
-            setTimeout(function(){ scroll(c, a, b, i); }, 20);
-        }
-        // start scrolling
-        scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-    }
 	</script>
 </body>
 
